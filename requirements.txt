@@ -1,0 +1,14 @@
+# Python 依赖（pip install -r requirements.txt）
+python-docx>=1.0      # 生成/装配 .docx
+matplotlib>=3.5       # 配图（流程图/架构图/曲线图/JSON 面板）
+Pillow>=9.0           # 配图嵌入时按比例适配尺寸
+
+# 可选：仅当用 scripts/gen_figures_graphviz.py 画复杂自动布局的流程/架构图时需要。
+# 注意 python 的 graphviz 包还需系统二进制 dot（见 README「系统依赖」）。
+graphviz>=0.20
+
+# 另需的系统级依赖（非 pip，见 README）：
+#   - graphviz (dot)          画 graphviz 图
+#   - libreoffice (soffice)   docx -> pdf 渲染校验
+#   - poppler-utils           pdf -> png（pdftoppm/pdfinfo/pdftotext）
+#   - 中文字体（推荐开源 Noto Sans CJK / Noto Sans SC）
