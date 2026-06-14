@@ -1,6 +1,6 @@
 {
   "name": "cnipa-patent-writer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Claude Code Agent Skill for drafting Chinese invention patents (CNIPA) — borrows only a template's formatting, generates all content from your own materials. Installs via npx into your agent's skills folder.",
   "bin": {
     "cnipa-patent-writer": "bin/cli.js"
