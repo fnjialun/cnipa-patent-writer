@@ -61,7 +61,8 @@ npx cnipa-patent-writer --force         # 覆盖已存在的安装
 > 安装器是纯 Node 脚本、无运行时依赖，把 `SKILL.md` + `references/` + `scripts/` 复制到目标技能目录，并打印
 > Python/系统依赖的安装提示。装完在你的 agent 里让它写专利即可触发。
 >
-> 若包尚未发布到 npm，也可直接从 GitHub 运行：`npx github:fnjialun/cnipa-patent-writer`。
+> 上面 `npx cnipa-patent-writer` 从 [npm](https://www.npmjs.com/package/cnipa-patent-writer) 安装；也可不经 npm、
+> 直接从 GitHub 源运行：`npx github:fnjialun/cnipa-patent-writer`。
 
 ### 方式二：手动克隆
 
