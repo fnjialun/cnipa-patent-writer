@@ -49,14 +49,29 @@ cnipa-patent-writer/
 
 ## 安装
 
-作为 Claude Code 技能，克隆到你的技能目录即可（**目录名须与技能名一致**）：
+### 方式一：`npx`（推荐，一条命令装进 agent 技能目录）
 
 ```bash
-git clone https://github.com/fnjialun/cnipa-patent-writer.git \
-  ~/.claude/skills/cnipa-patent-writer
+npx cnipa-patent-writer                 # 装到 Claude Code 用户技能目录 ~/.claude/skills/cnipa-patent-writer
+npx cnipa-patent-writer --project       # 只装到当前项目 ./.claude/skills/...
+npx cnipa-patent-writer --dir <路径>    # 其他 agent 工具：填它的技能目录
+npx cnipa-patent-writer --force         # 覆盖已存在的安装
 ```
 
-之后在 Claude Code 里让它写专利时会自动触发；脚本也可单独运行。
+> 安装器是纯 Node 脚本、无运行时依赖，把 `SKILL.md` + `references/` + `scripts/` 复制到目标技能目录，并打印
+> Python/系统依赖的安装提示。装完在你的 agent 里让它写专利即可触发。
+>
+> 若包尚未发布到 npm，也可直接从 GitHub 运行：`npx github:fnjialun/cnipa-patent-writer`。
+
+### 方式二：手动克隆
+
+```bash
+git clone https://github.com/fnjialun/cnipa-patent-writer.git
+# 把技能本体（SKILL.md / references / scripts）拷进技能目录：
+cp -r cnipa-patent-writer/{SKILL.md,references,scripts} ~/.claude/skills/cnipa-patent-writer/
+```
+
+无论哪种方式，装完后记得按下面「依赖」装好 Python 与系统依赖。
 
 ## 依赖
 

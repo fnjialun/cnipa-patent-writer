@@ -1,0 +1,41 @@
+{
+  "name": "cnipa-patent-writer",
+  "version": "0.1.0",
+  "description": "A Claude Code Agent Skill for drafting Chinese invention patents (CNIPA) — borrows only a template's formatting, generates all content from your own materials. Installs via npx into your agent's skills folder.",
+  "bin": {
+    "cnipa-patent-writer": "bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "SKILL.md",
+    "references/",
+    "scripts/",
+    "requirements.txt",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "agent-skill",
+    "skill",
+    "patent",
+    "cnipa",
+    "发明专利",
+    "专利",
+    "docx"
+  ],
+  "homepage": "https://github.com/fnjialun/cnipa-patent-writer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fnjialun/cnipa-patent-writer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fnjialun/cnipa-patent-writer/issues"
+  },
+  "author": "fnjialun",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.7"
+  }
+}
